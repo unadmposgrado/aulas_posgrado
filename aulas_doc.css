@@ -1,0 +1,141 @@
+.page-top-band{
+  position:relative;
+  width:100%;
+  min-height:100px;
+  background:#fef4f4;
+  border-bottom:3px solid #7c2f32;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  padding:0 24px 30px;
+  box-sizing:border-box;
+}
+
+.page-top-links{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  align-items:center;
+  gap:8px;
+}
+
+.page-top-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 10px;
+  border-radius:6px;
+  background:transparent;
+  color:#181717;
+  text-decoration:none;
+  font-size:20px;
+  transition:background .2s ease;
+}
+
+.page-top-link:hover{
+  background:#f5ecec;
+}
+
+.breadcrumb-bar{
+  display:inline-block;
+  margin-top:50px;
+  box-sizing:border-box;
+}
+
+.breadcrumb-nav{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+  font-size:15px;
+  color:#4a4a4a;
+}
+
+.breadcrumb-link{
+  color:#4a4a4a;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.breadcrumb-link:hover{
+  color:#29473f;
+  text-decoration:underline;
+}
+
+.breadcrumb-separator{
+  color:#7a7a7a;
+}
+
+.breadcrumb-current{
+  display:inline-block;
+  background:#3b7973;
+  color:#ffffff;
+  font-weight:600;
+  padding:4px 8px;
+  border-radius:4px;
+}
+
+.doctorado-page{
+  margin-top:40px;
+}
+
+.doctorado-page h1{
+  font-size:34px;
+  margin:0 0 30px;
+  color:#f2954b;
+}
+
+.asignaturas-section h2{
+  color:#2255c4;
+  font-size:30px;
+  margin:0 0 18px;
+}
+
+.semestre-box{
+  border:1px solid #d1d9e9;
+  border-radius:12px;
+  padding:22px;
+  background:#ffffff;
+  box-shadow:0 6px 15px rgba(0,0,0,.04);
+}
+
+.semestre-header{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:18px;
+  color:#1a1a1a;
+}
+
+.asignaturas-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.asignatura-btn{
+  display:block;
+  padding:18px 22px;
+  background:#ffffff;
+  border:1px solid #d1d9e9;
+  border-left:6px solid #2255c4;
+  color:#1a1a1a;
+  text-decoration:none;
+  font-size:16px;
+  border-radius:8px;
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.asignatura-btn:hover{
+  background:#f3f7ff;
+  transform:translateX(4px);
+  box-shadow:0 10px 18px rgba(34,85,196,.12);
+}
+
+@media (max-width:700px){
+  .doctorado-page{
+    margin-top:24px;
+  }
+  .asignatura-btn{
+    padding:16px 18px;
+  }
+}
