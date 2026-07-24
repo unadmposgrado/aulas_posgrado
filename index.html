@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi UnADM - Programa de Mediación</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span>Español – Internacional (es)</span>
+  <div class="top-bar-right">
+    <div class="notif-bell">
+      <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6V11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+      <span class="notif-badge">2</span>
+    </div>
+    <div class="chat-icon">
+      <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+    </div>
+    <span class="user-name">Zenón Hernández Hernández</span>
+    <div class="avatar-placeholder">Z</div>
+  </div>
+</div>
+
+<!-- HEADER / LOGOS -->
+<div class="header">
+  <div class="logo-sep"></div>
+    <img src="logos-Edu_UnADM.png" alt="Escudo de México" height="44">
+  <div class="logo-sep"></div>
+  <div>
+    <img src="miunadm.png" height="44" alt="Logo Mi UnADM">
+  </div>
+  <div class="logo-sep"></div>
+</div>
+
+<!-- PAGE TITLE -->
+<div class="page-title-bar">
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  <h1>Mi UnADM</h1>
+  <button class="right-menu-toggle" type="button" onclick="toggleRightMenu()" aria-controls="menuDerecho" aria-expanded="true" title="Ocultar menú derecho">
+    Panel derecho
+  </button>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="main-layout">
+
+  <!-- LEFT SIDEBAR -->
+  <nav class="sidebar-left" id="menuBotones">
+    <button class="nav-btn primary">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      Mi UnADM
+    </button>
+    <button class="nav-btn">Mis cursos</button>
+    <button class="nav-btn">Participantes</button>
+    <button class="nav-btn">Calificaciones</button>
+    <button class="nav-btn">General</button>
+    <div class="nav-section-divider asignatura-divider"></div>
+    <div id="contenedorSemanas"></div>
+    <div class="nav-section-divider asignatura-divider"></div>
+    <button class="nav-btn">Sesiones síncronas</button>
+    <button class="nav-btn">Kit de supervivencia</button>
+  </nav>
+
+  <!-- CENTER CONTENT -->
+  <main class="content-area" id="contenidoDinamico">
+    <div class="content-header">
+      <h2></h2>
+      <div class="breadcrumb"></div>
+    </div>
+
+    <div class="content-body">
+      <div class="loading-message">
+        <p>Cargando contenido...</p>
+      </div>
+    </div>
+
+    <div class="content-nav">
+      <button class="nav-arrow-btn">← Anterior</button>
+      <button class="nav-arrow-btn">Siguiente →</button>
+    </div>
+  </main>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="sidebar-right" id="menuDerecho">
+    <button class="side-btn">Biblioteca digital</button>
+    <button class="side-btn">Mesa de servicio</button>
+    <button class="side-btn">Calendario</button>
+
+    <div class="avances-box">
+      <h4>Mis avances</h4>
+      <div class="avances-label">Actualmente</div>
+      <div class="progress-bar-outer">
+        <div class="progress-bar-inner"></div>
+      </div>
+      <div class="progress-text">Progreso: 7%</div>
+      <div class="ejercicio-item">
+        <span class="ejercicio-badge">H5P</span>
+        <span>Ejercicio 1</span>
+        <div class="check-icon"></div>
+        <span>Completado</span>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
