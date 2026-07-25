@@ -21,39 +21,305 @@
 
   <div class="content-wrapper">
     <aside class="sidebar-menu" aria-label="Menú de quincenas">
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 1</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 2</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 3</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 4</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 5</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 6</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 7</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 8</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 9</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 10</a>
-      <a href="javascript:void(0)" class="sidebar-btn">Quincena 11</a>
+      <button type="button" class="sidebar-btn is-active" data-section="quincena-1">Quincena 1</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-2">Quincena 2</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-3">Quincena 3</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-4">Quincena 4</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-5">Quincena 5</button>
+      <button type="button" class="sidebar-btn" data-section="intermedio">Periodo intermedio (2 semanas)</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-6">Quincena 6</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-7">Quincena 7</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-8">Quincena 8</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-9">Quincena 9</button>
+      <button type="button" class="sidebar-btn" data-section="quincena-10">Quincena 10</button>
+      
     </aside>
 
-    <div class="content-main">
-      <div class="breadcrumb-bar">
-        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-          <a href="index.html" class="breadcrumb-link">Inicio</a>
-          <span class="breadcrumb-separator">⟩</span>
-          <a href="doctorado.html" class="breadcrumb-link">Doctorado en educación abierta y a distancia</a>
-          <span class="breadcrumb-separator">⟩</span>
-          <span class="breadcrumb-current">Semestre 1 - Mediación del aprendizaje</span>
-        </nav>
-      </div>
-
-      <h2 class="page-title">Mediación del aprendizaje</h2>
-      <p class="page-subtitle">Encuadre</p><br>
-      <p class="page-title2">Te damos la bienvenida al curso de Mediación del aprendizaje.</p>
-      <p>La asignatura Mediación del aprendizaje ofrece un espacio de análisis, reflexión y construcción académica en torno a las prácticas de mediación en entornos virtuales. A lo largo del curso, se revisarán modelos didácticos, estrategias de acompañamiento e interacciones pedagógicas orientadas a fortalecer experiencias formativas pertinentes, críticas y contextualizadas.</p>
-    </div>
+    <div id="content-panel" class="content-main" aria-live="polite"></div>
   </div>
 
   <footer>
     Universidad Abierta y a Distancia de México (UnADM) Todos los derechos reservados. Impulsado por UnADM
   </footer>
+
+  <script>
+    const contentSections = {
+      'quincena-1': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Encuadre e inicio de la Unidad 1: El modelo didáctico como eje para la mediación del aprendizaje</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>Encuadre de la asignatura:</strong>
+                <ul class="section-sublist">
+                  <li>Presentación del programa, metodología y criterios de evaluación</li>
+                  <li>Bienvenida y contextualización del curso</li>
+                </ul>
+              </li>
+              <li><strong>1.1 Concepciones teóricas del modelo didáctico:</strong>
+                <ul class="section-sublist">
+                  <li>1.1.1 Relaciones entre pedagogía y didáctica (Vargas-Silva)</li>
+                  <li>1.1.2 Diversidad didáctica, aprendizaje y propuestas de acción (Flechsig)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Actividades sugeridas:</strong> 📖 Lectura individual. 💬 Foro: diferencias entre pedagogía y didáctica. 📝 Evaluación diagnóstica (conocimientos previos).</p>
+          </div>
+        `
+      },
+      'quincena-2': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Modelos didácticos y entorno virtual de aprendizaje</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>1.1.3</strong> Fundamentación, características, estructura y tipologías de los modelos didácticos (Guárate)</li>
+              <li><strong>1.2 El modelo didáctico en un entorno virtual de aprendizaje:</strong>
+                <ul class="section-sublist">
+                  <li>1.2.1 Instrucción programada (Flechsig)</li>
+                  <li>1.2.2 Elementos tecnológicos, organizativos y pedagógicos del modelo didáctico (Salinas, et. al)</li>
+                  <li>1.2.3 Modelo: entornos virtuales de aprendizaje (Guárate)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Actividades sugeridas:</strong> 📘 Organizador gráfico (mapa conceptual). 🗣️ Foro comparativo. 🔍 Revisión de aula virtual. Sesión sincrónica.</p>
+          </div>
+        `
+      },
+      'quincena-3': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Educación abierta, heutagogía, conectivismo y cierre de Unidad 1</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>1.3 Aproximaciones a un modelo didáctico para la educación abierta y a distancia:</strong>
+                <ul class="section-sublist">
+                  <li>1.3.1 El aprendizaje abierto y cooperativo (García y Rabajoli)</li>
+                  <li>1.3.2 El aprendizaje heutagógico, andragógico y conectivista (Mendiola y Lima)</li>
+                  <li>1.3.3 Desafíos didácticos entre la hibridación y la inteligencia artificial (Maggio)</li>
+                  <li>1.3.4 Los modelos mediacional y ecológico (Gimeno Sacristán y Espinoza)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Producto integrador de Unidad 1:</strong> 📌 Ensayo argumentativo sobre el modelo didáctico</p>
+          </div>
+        `
+      },
+      'quincena-4': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Inicio de la Unidad 2: La mediación del aprendizaje en el contexto actual</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>2.1 La mediación del aprendizaje y su importancia:</strong>
+                <ul class="section-sublist">
+                  <li>2.1.1 Enfoque epistémico de la mediación del aprendizaje (Tapia Sosa; Ruiz y Ramírez; Vargas-Manrique)</li>
+                  <li>2.1.2 Fundamentos de la mediación didáctica (Aguirre y Espinoza)</li>
+                  <li>2.1.3 Perspectivas pedagógica, cognitiva y sociocultural de la mediación (Ruiz y Ramírez)</li>
+                  <li>2.1.4 Transposición didáctica (Gómez)</li>
+                  <li>2.1.5 Metodologías del aprendizaje basado en proyectos y en problemas (Cenich; Ortiz et al.; Escribano)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Actividades sugeridas:</strong> 📖 Lectura. Foro: ¿Cómo aprendí a mediar? 📝 Organizador gráfico. Sesión sincrónica ABP.</p>
+          </div>
+        `
+      },
+      'quincena-5': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Actores didácticos y aula virtual en un ambiente virtual de aprendizaje</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>2.2 Actores didácticos en un ambiente virtual de aprendizaje:</strong>
+                <ul class="section-sublist">
+                  <li>2.2.1 Diseño y análisis del ambiente virtual de aprendizaje (Vargas; Céron)</li>
+                  <li>2.2.2 Las fases de la modalidad didáctica de un ambiente virtual de aprendizaje (Céron)</li>
+                  <li>2.2.3 El aula virtual (Buitrón)</li>
+                  <li>2.2.4 Estructuras cognitivas para la construcción de un modelo didáctico en un ambiente virtual de aprendizaje (Céron)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Actividades sugeridas:</strong> 🌐 Wiki colaborativa. Análisis de aula virtual modelo. 📘 Lectura + foro: estructuras cognitivas.</p>
+          </div>
+        `
+      },
+      'intermedio': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Periodo intermedio de integración y reflexión</h3>
+            <p>Se propone una etapa de consolidación de aprendizajes, revisión de avances y preparación para la segunda parte del curso.</p>
+          </div>
+        `
+      },
+      'quincena-6': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Mediación en un ambiente virtual y habilidades del mediador (Primera parte)</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>2.3 La importancia de la mediación en un ambiente virtual de aprendizaje:</strong>
+                <ul class="section-sublist">
+                  <li>2.3.1 Mediación tecnológica (Lanzábal; Gómez)</li>
+                  <li>2.3.2 Habilidades cognitivas y metacognitivas (Arenas)</li>
+                  <li>2.3.3 De la mediación a la personalización (Bernaza)</li>
+                </ul>
+              </li>
+              <li><strong>2.4 Habilidades del mediador en un ambiente virtual de aprendizaje:</strong>
+                <ul class="section-sublist">
+                  <li>2.4.1 Hablando de competencias para la mediación (Tapia; Ruiz)</li>
+                  <li>2.4.2 Estrategias para definir el perfil del mediador (Urdaneta)</li>
+                  <li>2.4.3 Habilidades pedagógicas (Brenes; Ruiz)</li>
+                  <li>2.4.4 Habilidades sociales (Cordero)</li>
+                  <li>2.4.5 Comunicativas (Ávila)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Actividades sugeridas:</strong> 🧠 Borrador del biograma de trayectoria. 📋 Autoevaluación. Foro competencias.</p>
+          </div>
+        `
+      },
+      'quincena-7': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Habilidades del mediador (Segunda parte) y cierre de Unidad 2</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>2.4 Habilidades del mediador en un ambiente virtual de aprendizaje:</strong>
+                <ul class="section-sublist">
+                  <li>2.4.6 Psicológicas (Sánchez)</li>
+                  <li>2.4.7 Investigativas (Pegudo)</li>
+                  <li>2.4.8 Interculturales (Alarcón y Márquez)</li>
+                  <li>2.4.9 Socioemocionales (Feuerstein, Scarafía)</li>
+                </ul>
+              </li>
+              <li><strong>Inicio de la Unidad 3: El aprendizaje para la sociedad del conocimiento</strong>
+                <ul class="section-sublist">
+                  <li>3.1.1 Motivación y diálogo virtual (Arenas)</li>
+                  <li>3.1.2 Mediación sociocultural en entornos virtuales (Ruiz y Ramírez, pp. 21-26)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Producto integrador de Unidad 2:</strong> 📌 Biograma de trayectoria (narrativa autobiográfica)</p>
+          </div>
+        `
+      },
+      'quincena-8': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Diálogo multimodal, retroalimentación y prosumidores educativos</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>3.1 La mediación para la interactividad en un entorno virtual de aprendizaje:</strong>
+                <ul class="section-sublist">
+                  <li>3.1.3 Diálogo multimodal en la mediación virtual (Ruiz y Ramírez, 45-66)</li>
+                  <li>3.1.4 La retroalimentación (Quezada; Espinoza)</li>
+                </ul>
+              </li>
+              <li><strong>3.2 El aprendizaje mediado y los prosumidores educativos:</strong>
+                <ul class="section-sublist">
+                  <li>3.2.1 Referente sobre el productor y consumidor: prosumidor (González)</li>
+                  <li>3.2.2 El docente-prosumidor (González; Buenestado)</li>
+                  <li>3.2.3 El prosumidor y su acción educadora (González)</li>
+                  <li>3.2.4 La formación del docente-prosumidor (Buenestado)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Actividades sugeridas:</strong> ✏️ Borrador de propuesta de mejora. Análisis de retroalimentación. 🧩 Debate sincrónico.</p>
+          </div>
+        `
+      },
+      'quincena-9': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Conocimiento digital, inteligencia artificial y neurodidáctica</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>3.3 El aprendizaje en la era digital y en la sociedad del conocimiento:</strong>
+                <ul class="section-sublist">
+                  <li>3.3.1 El conectivismo: una teoría para el aprendizaje en la era digital (Siemens)</li>
+                  <li>3.3.2 Conocimiento en era digital (Requena)</li>
+                  <li>3.3.3 Internet y aprendizaje (Villanueva)</li>
+                  <li>3.3.4 La inteligencia artificial en el contexto educativo (Vera; Navarrete; Peña y Sanabria-Navarro)</li>
+                </ul>
+              </li>
+              <li><strong>3.4 Acerca de la neurodidáctica para el aprendizaje en el contexto actual:</strong>
+                <ul class="section-sublist">
+                  <li>3.4.1 Funciones de los hemisferios cerebrales para el aprendizaje (Rivas)</li>
+                  <li>3.4.2 Las emociones y el aprendizaje significativo (Rivas; Navacerrada)</li>
+                  <li>3.4.3 Neurodidáctica (Rivas; Ibarrola)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Actividades sugeridas:</strong> 📊 Organizador gráfico IA. Foro emociones y mediación.</p>
+          </div>
+        `
+      },
+      'quincena-10': {
+        body: `
+          <div class="section-content">
+            <h3 class="section-detail-title">Productos integradores, evaluación final y cierre del programa</h3>
+            <p><strong>Contenidos:</strong></p>
+            <ul class="section-list">
+              <li><strong>Producto integrador de la Unidad 3:</strong>
+                <ul class="section-sublist">
+                  <li>Características del modelo didáctico a implementar</li>
+                  <li>Análisis contextual</li>
+                  <li>Árbol de áreas de mejora</li>
+                  <li>Perfil de habilidades para la mediación</li>
+                </ul>
+              </li>
+              <li><strong>Cierre integrador de la asignatura:</strong>
+                <ul class="section-sublist">
+                  <li>Modelo didáctico en el que se enmarca la práctica de mediación</li>
+                  <li>Estrategias didácticas para la mejora de la práctica de mediación</li>
+                  <li>Conclusiones sobre los retos de ser mediador del aprendizaje en la sociedad del conocimiento</li>
+                </ul>
+              </li>
+              <li><strong>Evaluación final:</strong>
+                <ul class="section-sublist">
+                  <li>Portafolio reflexivo</li>
+                  <li>Autoevaluación del perfil de egreso</li>
+                  <li>Retroalimentación global y sesión sincrónica de cierre</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Producto integrador de Unidad 3:</strong> 📌 Documento de estrategias didácticas + Narrativa autobiográfica integradora</p>
+          </div>
+        `
+      }
+    };
+
+    const contentPanel = document.getElementById('content-panel');
+    const sidebarButtons = Array.from(document.querySelectorAll('.sidebar-btn'));
+
+    function renderContent(sectionKey) {
+      const section = contentSections[sectionKey];
+      contentPanel.innerHTML = `
+        <div class="breadcrumb-bar">
+          <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+            <a href="index.html" class="breadcrumb-link">Inicio</a>
+            <span class="breadcrumb-separator">⟩</span>
+            <a href="doctorado.html" class="breadcrumb-link">Doctorado en educación abierta y a distancia</a>
+            <span class="breadcrumb-separator">⟩</span>
+            <span class="breadcrumb-current">Semestre 1 - Mediación del aprendizaje</span>
+          </nav>
+        </div>
+
+        <h2 class="page-title">Mediación del aprendizaje</h2>
+        ${section.body}
+      `;
+
+      sidebarButtons.forEach((button) => {
+        button.classList.toggle('is-active', button.dataset.section === sectionKey);
+      });
+    }
+
+    sidebarButtons.forEach((button) => {
+      button.addEventListener('click', () => renderContent(button.dataset.section));
+    });
+
+    renderContent('quincena-1');
+  </script>
 </body>
 </html>
