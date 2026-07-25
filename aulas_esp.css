@@ -1,0 +1,264 @@
+.page-top-band{
+  position:relative;
+  width:100%;
+  min-height:100px;
+  background:#fef4f4;
+  border-bottom:3px solid #7c2f32;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  padding:0 24px 30px;
+  box-sizing:border-box;
+}
+
+.page-top-links{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  align-items:center;
+  gap:8px;
+}
+
+.page-top-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 10px;
+  border-radius:6px;
+  background:transparent;
+  color:#181717;
+  text-decoration:none;
+  font-size:20px;
+  transition:background .2s ease;
+}
+
+.page-top-link:hover{
+  background:#f5ecec;
+}
+
+.content-wrapper{
+  width:100%;
+  padding:0;
+  box-sizing:border-box;
+  display:grid;
+  grid-template-columns:285px minmax(0, 1fr);
+  align-items:start;
+}
+
+.sidebar-menu{
+  width:100%;
+  background:#f8f9fa;
+  padding:0;
+  box-sizing:border-box;
+  position:sticky;
+  top:20px;
+  align-self:start;
+}
+
+.sidebar-btn{
+  display:flex;
+  align-items:center;
+  width:100%;
+  min-height:50px;
+  padding:0 16px;
+  border:0;
+  background:transparent;
+  color:#1f1f1f;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:background .2s ease, color .2s ease;
+  text-align:left;
+}
+
+.sidebar-btn:hover,
+.sidebar-btn.is-active{
+  background:#757575;
+  color:#ffffff;
+}
+
+.content-main{
+  min-width:0;
+  padding:0 50px 0 32px;
+}
+
+.section-content{
+  margin-top:12px;
+}
+
+.section-detail-title{
+  margin:0 0 16px;
+  color:#2255c4;
+  font-size:24px;
+  font-weight:700;
+}
+
+.section-list,
+.section-sublist{
+  margin:0 0 12px 20px;
+  padding:0;
+}
+
+.section-list > li,
+.section-sublist > li{
+  margin-bottom:8px;
+  line-height:1.6;
+}
+
+.section-content p{
+  margin:0 0 12px;
+  line-height:1.7;
+}
+
+.breadcrumb-bar{
+  display:block;
+  margin-top:50px;
+  margin-bottom:30px;
+  box-sizing:border-box;
+}
+
+.page-title{
+  margin:0 0 50px;
+  color:#a7802d;
+  font-size:30px;
+  font-weight:700;
+}
+
+.page-subtitle{
+  margin:0;
+  margin-bottom:20px;
+  font-size:30px;
+  font-weight:600;
+  color:#ffffff;
+  background:#f2954b;
+  display:inline-block;
+  padding:2px 10px;
+  border-radius:6px;
+}
+
+  .page-title2{
+    font-size:25px;
+    margin:0 0 20px;
+    font-weight:600;
+    color:#4b72f2;
+  }
+
+p{
+  font-size:20px;
+  color:#000000;
+  text-align:justify;
+}
+
+.breadcrumb-nav{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+  font-size:15px;
+  color:#4a4a4a;
+}
+
+.breadcrumb-link{
+  color:#4a4a4a;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.breadcrumb-link:hover{
+  color:#29473f;
+  text-decoration:underline;
+}
+
+.breadcrumb-separator{
+  color:#7a7a7a;
+}
+
+.breadcrumb-current{
+  display:inline-block;
+  background:#3b7973;
+  color:#ffffff;
+  font-weight:600;
+  padding:4px 8px;
+  border-radius:4px;
+}
+
+.doctorado-page{
+  margin-top:40px;
+}
+
+.doctorado-page h1{
+  font-size:34px;
+  margin:0 0 30px;
+  color:#f2954b;
+}
+
+.asignaturas-section h2{
+  color:#2255c4;
+  font-size:30px;
+  margin:0 0 18px;
+}
+
+.semestre-box{
+  border:1px solid #d1d9e9;
+  border-radius:12px;
+  padding:22px;
+  background:#ffffff;
+  box-shadow:0 6px 15px rgba(0,0,0,.04);
+}
+
+.semestre-header{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:18px;
+  color:#1a1a1a;
+}
+
+.asignaturas-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.asignatura-btn{
+  display:block;
+  padding:18px 22px;
+  background:#ffffff;
+  border:1px solid #d1d9e9;
+  border-left:6px solid #f2954b;
+  color:#1a1a1a;
+  text-decoration:none;
+  font-size:16px;
+  border-radius:8px;
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.asignatura-btn:hover{
+  background:#f3f7ff;
+  transform:translateX(4px);
+  box-shadow:0 10px 18px rgba(34,85,196,.12);
+}
+
+@media (max-width:700px){
+  .content-wrapper{
+    grid-template-columns:1fr;
+    padding:0 20px 40px;
+  }
+
+  .sidebar-menu{
+    width:100%;
+    margin-bottom:24px;
+    position:static;
+  }
+
+  .content-main{
+    padding-left:0;
+  }
+
+  .doctorado-page{
+    margin-top:24px;
+  }
+  .asignatura-btn{
+    padding:16px 18px;
+  }
+}
