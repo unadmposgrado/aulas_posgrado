@@ -13,6 +13,22 @@
   padding:0 clamp(12px, 1.2vw, 32px);
   gap: clamp(12px, 1.2vh, 24px);
 }
+.topbar-home{
+  margin-right:auto;
+  color:#ffffff;
+  text-decoration:none;
+  font-weight: bold;
+  padding: clamp(6px, 0.8vh, 10px) clamp(10px, 1vw, 16px);
+  border-radius: clamp(6px, 0.6vh, 10px);
+  background:transparent;
+  transition: background-color .2s ease;
+  display:inline-flex;
+  align-items:center;
+}
+.topbar-home:hover{
+  background:#e6e2d8;
+  color:#1f4a3d;
+}
 .topbar .icon{
   color:#ffffff;
   font-size: clamp(16px, 1.6vh, 22px);
