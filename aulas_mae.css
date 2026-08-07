@@ -126,6 +126,11 @@
   white-space:nowrap;
 }
 
+.dropdown-submenu[aria-label="Kit de supervivencia"]{
+  left:auto;
+  right:100%;
+}
+
 .dropdown-item-has-submenu:hover > .dropdown-submenu,
 .dropdown-item-has-submenu:focus-within > .dropdown-submenu{
   display:flex;
