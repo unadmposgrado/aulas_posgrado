@@ -93,6 +93,40 @@ footer{
 }
 footer a{ color:#ffffff; font-weight:600; text-decoration:underline; }
 
+/* ===== BARRA DE BOTONES DEL CURSO ===== */
+.page-subnav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0;
+  margin:4px 0 24px;
+  background:#e9ecef;
+  border-radius:0;
+  overflow:hidden;
+  width:fit-content;
+  max-width:100%;
+}
+
+.page-subnav__button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px 20px;
+  background:transparent;
+  color:#29473f;
+  font-weight:700;
+  text-decoration:none;
+  border:0;
+  border-radius:0;
+  transition:background-color .2s ease, color .2s ease, border-radius .2s ease;
+}
+
+.page-subnav__button:hover,
+.page-subnav__button:focus-visible{
+  background:#29473f;
+  color:#ffffff;
+  border-radius:10px;
+}
+
 @media (max-width:700px){
   .stripe-container{
     width:100%;
