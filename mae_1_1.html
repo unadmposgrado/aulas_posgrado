@@ -8,13 +8,50 @@
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="aulas_mae.css">
 <script src="header-loader.js" defer></script>
+<script src="page-top-dropdown.js" defer></script>
 </head>
 <body>
   <div id="header-container"></div>
   <div class="page-top-band">
     <div class="page-top-links">
-      <a href="index.html" class="page-top-link">Mi UnADM</a>
-      <a href="javascript:void(0)" class="page-top-link">Mi espacio personal</a>
+      <div class="page-top-dropdown">
+        <button type="button" class="page-top-link page-top-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Mi UnADM</button>
+        <div class="dropdown-menu" role="menu" aria-label="Mi UnADM">
+          <div class="dropdown-item dropdown-item-has-submenu" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            <span>Servicios escolares</span>
+            <span class="submenu-arrow">▸</span>
+            <div class="dropdown-submenu" role="menu" aria-label="Servicios escolares">
+              <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Credencial estudiantil</a>
+              <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Constancia de estudios</a>
+              <div class="dropdown-item dropdown-item-has-submenu submenu-item" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                <span>Titulación</span>
+                <span class="submenu-arrow">▸</span>
+                <div class="dropdown-submenu" role="menu" aria-label="Titulación">
+                  <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Diploma especialidad</a>
+                  <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Grado maestría</a>
+                  <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Grado Doctorado</a>
+                </div>
+              </div>
+              <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Manuales</a>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="dropdown-item" role="menuitem">Mesa de servicio</a>
+          <div class="dropdown-item dropdown-item-has-submenu" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            <span>Normatividad</span>
+            <span class="submenu-arrow">▸</span>
+            <div class="dropdown-submenu" role="menu" aria-label="Normatividad">
+              <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Reglamento Universitario</a>
+              <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Código de ética del estudiante</a>
+              <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Marco legal de la educación en México</a>
+              <a href="javascript:void(0)" class="dropdown-item submenu-item" role="menuitem">Reglamento de estudios de posgrado</a>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="dropdown-item" role="menuitem">Biblioteca digital</a>
+          <a href="javascript:void(0)" class="dropdown-item" role="menuitem">Eventos UnADM</a>
+          <a href="javascript:void(0)" class="dropdown-item" role="menuitem">SSAP</a>
+        </div>
+      </div>
+      <a href="index.html" class="page-top-link">Mi espacio personal</a>
       <a href="javascript:void(0)" class="page-top-link">Herramientas de apoyo</a>
     </div>
   </div>
