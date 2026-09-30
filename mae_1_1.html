@@ -353,6 +353,13 @@
 
     function renderContent(sectionKey) {
       const section = contentSections[sectionKey];
+      const synchronousSessions = sectionKey.startsWith('semana-') ? `
+        <div class="section-content">
+          <h3 class="section-detail-title">Sesiones síncronas</h3>
+          <p>aquí encontrarás el calendario de las sesiones síncronas que tendrás a través de la plataforma Big Blue Button.</p>
+          <img src="https://raw.githubusercontent.com/bigbluebutton/bigbluebutton/develop/docs/static/img/logo.svg" alt="Logotipo de BigBlueButton" width="100">
+        </div>
+      ` : '';
       contentPanel.innerHTML = `
         <div class="breadcrumb-bar">
           <nav class="breadcrumb-nav" aria-label="Breadcrumb">
@@ -365,7 +372,7 @@
         </div>
 
         <h2 class="page-title">Fundamentos de pedagogía</h2>
-        ${section.body}
+        ${section.body}${synchronousSessions}
       `;
 
       sidebarButtons.forEach((button) => {
