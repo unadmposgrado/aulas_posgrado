@@ -77,19 +77,19 @@
   </div>
 
   <div class="content-wrapper">
-    <aside class="sidebar-menu" aria-label="Menú de quincenas">
-      <button type="button" class="sidebar-btn is-active" data-section="quincena-1">Quincena 1</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-2">Quincena 2</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-3">Quincena 3</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-4">Quincena 4</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-5">Quincena 5</button>
+    <aside class="sidebar-menu" aria-label="Menú de semanas">
+      <button type="button" class="sidebar-btn is-active" data-section="semana-1">Semana 1</button>
+      <button type="button" class="sidebar-btn" data-section="semana-2">Semana 2</button>
+      <button type="button" class="sidebar-btn" data-section="semana-3">Semana 3</button>
+      <button type="button" class="sidebar-btn" data-section="semana-4">Semana 4</button>
+      <button type="button" class="sidebar-btn" data-section="semana-5">Semana 5</button>
+      <button type="button" class="sidebar-btn" data-section="semana-6">Semana 6</button>
+      <button type="button" class="sidebar-btn" data-section="semana-7">Semana 7</button>
+      <button type="button" class="sidebar-btn" data-section="semana-8">Semana 8</button>
+      <button type="button" class="sidebar-btn" data-section="semana-9">Semana 9</button>
+      <button type="button" class="sidebar-btn" data-section="semana-10">Semana 10</button>
       <button type="button" class="sidebar-btn" data-section="intermedio">Periodo de actualización (2 semanas)</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-6">Quincena 6</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-7">Quincena 7</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-8">Quincena 8</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-9">Quincena 9</button>
-      <button type="button" class="sidebar-btn" data-section="quincena-10">Quincena 10</button>
-      
+
     </aside>
 
     <div id="content-panel" class="content-main" aria-live="polite"></div>
@@ -101,7 +101,7 @@
 
   <script>
     const contentSections = {
-      'quincena-1': {
+      'semana-1': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Encuadre e inicio de la Unidad 1: El modelo didáctico como eje para la mediación del aprendizaje</h3>
@@ -124,7 +124,7 @@
           </div>
         `
       },
-      'quincena-2': {
+      'semana-2': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Modelos didácticos y entorno virtual de aprendizaje</h3>
@@ -143,7 +143,7 @@
           </div>
         `
       },
-      'quincena-3': {
+      'semana-3': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Educación abierta, heutagogía, conectivismo y cierre de Unidad 1</h3>
@@ -162,7 +162,7 @@
           </div>
         `
       },
-      'quincena-4': {
+      'semana-4': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Inicio de la Unidad 2: La mediación del aprendizaje en el contexto actual</h3>
@@ -182,7 +182,7 @@
           </div>
         `
       },
-      'quincena-5': {
+      'semana-5': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Actores didácticos y aula virtual en un ambiente virtual de aprendizaje</h3>
@@ -209,7 +209,7 @@
           </div>
         `
       },
-      'quincena-6': {
+      'semana-6': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Mediación en un ambiente virtual y habilidades del mediador (Primera parte)</h3>
@@ -236,7 +236,7 @@
           </div>
         `
       },
-      'quincena-7': {
+      'semana-7': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Habilidades del mediador (Segunda parte) y cierre de Unidad 2</h3>
@@ -261,7 +261,7 @@
           </div>
         `
       },
-      'quincena-8': {
+      'semana-8': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Diálogo multimodal, retroalimentación y prosumidores educativos</h3>
@@ -286,7 +286,7 @@
           </div>
         `
       },
-      'quincena-9': {
+      'semana-9': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Conocimiento digital, inteligencia artificial y neurodidáctica</h3>
@@ -312,7 +312,7 @@
           </div>
         `
       },
-      'quincena-10': {
+      'semana-10': {
         body: `
           <div class="section-content">
             <h3 class="section-detail-title">Productos integradores, evaluación final y cierre del programa</h3>
@@ -376,7 +376,7 @@
       button.addEventListener('click', () => renderContent(button.dataset.section));
     });
 
-    renderContent('quincena-1');
+    renderContent('semana-1');
   </script>
 </body>
 </html>
